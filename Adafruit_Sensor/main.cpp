@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Accelerometer.h"
+#include "Accelerometer.cpp"
 //#include <Adafruit_Sensor.h>
 
 int main() {
