@@ -9,10 +9,10 @@ INCLUDES := -I/usr/local/include
 LDFLAGS := -L/usr/local/lib
 
 # Libraries to link
-LIBS := -lmma_8451_pi
+LIBS := -lmma8451_pi
 
 # Source files
-SOURCES := main.cpp Acceleromter.cpp
+SOURCES := main.cpp 
 OBJECTS := $(SOURCES:.cpp=.o)
 EXECUTABLE := tester_notBuild
 

@@ -1,51 +1,36 @@
+#include <iostream>
 #include "Accelerometer.h"
-#include <cmath>
-//#include <Adafruit_Sensor.h>
-
-Accelerometer::Accelerometer(int threshold, int timeInterval, int fallInterval) {
-  _threshold = threshold;
-  _timeInterval = timeInterval;
-  _fallInterval = fallInterval;
-}
+#include <mma8451_pi.h>
 
 
 
-void Accelerometer::initialize() {
+
+
+
+/**
+int main() {
+  // Create an instance of the Accelerometer class
+  Accelerometer accelerometer(250, 2000, 5000);
+
   // Initialize the accelerometer
-}
-
-
-bool Accelerometer::isFallDetected() {
-  sensors_event_t event;
-  if (!mma.getEvent(&event)) {
-    return false;
+  if (!accelerometer.isInitialize()) {
+    cout << "Failed to initialize accelerometer!" << endl;
+    return -1;
   }
 
-  float acceleration = sqrt(pow(event.acceleration.x, 2) + pow(event.acceleration.y, 2) + pow(event.acceleration.z, 2));
-
-  if (acceleration > _threshold) {
-    if (!_wasMoving) {
-      unsigned long currentTime = getTimeInMillis();
-
-      if ((currentTime - _lastTime) > _timeInterval) {
-        if ((currentTime - _lastFallTime) > _fallInterval) {
-          _lastFallTime = currentTime;
-          _wasMoving = true;
-
-          return true;
-        }
-      }
+  // Loop to continuously check for falls
+  while (true) {
+    // Check if a fall has been detected
+    if (accelerometer.isFallDetected()) {
+      // Perform actions for when a fall is detected
+      cout << "Fall detected!" << endl;
     }
 
-    _wasMoving = true;
-  } else {
-    _wasMoving = false;
+    // Add a delay before checking for falls again
+    //delay(10);
   }
 
-  return false;
+  return 0;
 }
 
-
-unsigned long Accelerometer::getTimeInMillis() {
-  // Return the current time in milliseconds
-}
+*/

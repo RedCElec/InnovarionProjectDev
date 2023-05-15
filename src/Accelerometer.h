@@ -1,13 +1,14 @@
 #ifndef ACCELEROMETER_H
 #define ACCELEROMETER_H
 
-//#include <Adafruit_Sensor.h>
-#include <Adafruit_MMA8451.h>
+#include <mma8451_pi.h>
 #include <cmath>
+
+
 
 class Accelerometer {
   private:
-    Adafruit_MMA8451 mma;
+    mma8451 mma;
     float _threshold;
     unsigned long _timeInterval;
     unsigned long _fallInterval;
@@ -17,9 +18,8 @@ class Accelerometer {
 
   public:
     Accelerometer(float threshold, unsigned long timeInterval, unsigned long fallInterval);
-    void initialize();
+    bool isInitialize();
     bool isFallDetected();
 };
 
 #endif
-
