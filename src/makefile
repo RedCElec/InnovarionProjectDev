@@ -1,19 +1,37 @@
-CXX = g++
-CXXFLAGS = -Wall -I/home/Adafruit_Sensor -I/home/Adafruit_MMA8451
-LDFLAGS = -L/usr/local/lib
-LIBS = -lwiringPi /home/Adafruit_Sensor/libAdafruit_Sensor.a /home/Adafruit_Sensor/libAdafruit_MMA8451.a
+# Compiler
+CXX := g++
+CXXFLAGS := -std=c++11 -Wall
 
-SRCS = main.cpp Accelerometer.cpp
-OBJS = $(SRCS:.cpp=.o)
+# Include directories
+INCLUDES := -I/usr/local/include
 
-all: $(OBJS)
-	$(CXX) $(LDFLAGS) -o fall_detection $(OBJS) $(LIBS)
+# Library directories
+LDFLAGS := -L/usr/local/lib
 
-main.o: main.cpp Accelerometer.h
-	$(CXX) $(CXXFLAGS) -I/home/Adafruit_Sensor -c main.cpp
+# Libraries to link
+LIBS := -lmma_8451_pi
 
-Accelerometer.o: Accelerometer.cpp Accelerometer.h
-	$(CXX) $(CXXFLAGS) -I/home/Adafruit_Sensor -c Accelerometer.cpp
+# Source files
+SOURCES := main.cpp Acceleromter.cpp
+OBJECTS := $(SOURCES:.cpp=.o)
+EXECUTABLE := tester_notBuild
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CXX) $(LDFLAGS) $^ $(LIBS) -o $@
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+DEPS := $(SOURCES:.cpp=.d)
+
+-include $(DEPS)
+
+%.d: %.cpp
+	@$(CXX) $(CXXFLAGS) $(INCLUDES) -MM -MP $< -MT "$(@:.d=.o) $@" > $@
+
+.PHONY: clean
 
 clean:
-	rm -f fall_detection $(OBJS)
+	rm -f $(EXECUTABLE) $(OBJECTS) $(DEPS)
