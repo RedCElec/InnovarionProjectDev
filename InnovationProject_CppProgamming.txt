@@ -1,0 +1,18 @@
+	Request format:
+
+http://localhost:3000/webhook
+body : ->  (JSON) Value and timestamp
+
+http://localhost:3000/emergencybutton
+body : ->  (JSON) Value (either 1 or 0) and timestamp
+
+
+C++ Programming : (we just need to now if the value exceed a certain treshold) 
+
+dev for sensor in the while loop :-> (Mansour)
+-inside the while loop when detection call a function name (void detect())
+- (still inside the main.cpp) (Maxence) display something on the screen (I2C) (void display())
+
+
+IF ANYONE NEED A PACKAGE JUST TELL
+-LIBCURL (-for doing http request inside a c++ program)
