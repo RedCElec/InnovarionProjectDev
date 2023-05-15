@@ -1,5 +1,5 @@
 #include <iostream>
-#include <mma8451_pi.h>
+#include <mma8451_pi/mma8451_pi.h>
 #include <chrono> //to be check
 #include <thread>
 #include <fstream>
@@ -44,7 +44,7 @@ int main()
   std::ifstream valueFile(GPIO_PATH);
     if (!valueFile) {
         std::cerr << "Failed to open GPIO value file" << std::endl;
-        return 1;
+        //return 1; //should not be comment when build
     }
   //Important Value 
     char GPIO_value;
@@ -61,8 +61,6 @@ int main()
     std::cout << "GPIO 17 value: " << GPIO_value << std::endl;
     valueFile.close();
     
-
-
     //Sensor Part
     mma8451_get_acceleration(&sensor, &acceleration);
     std::cout << acceleration << std::endl;
