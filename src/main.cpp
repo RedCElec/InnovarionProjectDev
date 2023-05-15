@@ -31,6 +31,15 @@ void i2c_display()
 
 int main()
 {
+      // Export the GPIO pin
+    std::ofstream exportFile("/sys/class/gpio/export");
+    exportFile << GPIO_PIN;
+    exportFile.close();
+
+    // Set the GPIO pin as an INPUT
+    std::ofstream directionFile("/sys/class/gpio/gpio" + std::to_string(GPIO_PIN) + "/direction");
+    directionFile << "in";
+    directionFile.close();
   //Emergency Button Initialization
   std::ifstream valueFile(GPIO_PATH);
     if (!valueFile) {
@@ -51,6 +60,7 @@ int main()
     valueFile >> GPIO_value;
     std::cout << "GPIO 17 value: " << GPIO_value << std::endl;
     valueFile.close();
+    
 
 
     //Sensor Part
