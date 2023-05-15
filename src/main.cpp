@@ -1,11 +1,18 @@
 #include <iostream>
 #include <mma8451_pi.h>
 #include <chrono> //to be check
-#include <thread> //to be check
-// #include <Adafruit_Sensor.h>
+#include <thread>
+#include <fstream>
+#include <string>
 
 
-int treshold = 0.8;
+const int treshold = 0.8;
+
+// Path to the GPIO value file
+const int GPIO_PIN = 17;
+const std::string GPIO_PATH = "/sys/class/gpio/gpio" + std::to_string(GPIO_PIN) + "/value";
+
+
 
 void event(int value)
 {
@@ -24,22 +31,38 @@ void i2c_display()
 
 int main()
 {
-  std::cout << "Starting fall detection..." << std::endl;
+  //Emergency Button Initialization
+  std::ifstream valueFile(GPIO_PATH);
+    if (!valueFile) {
+        std::cerr << "Failed to open GPIO value file" << std::endl;
+        return 1;
+    }
+  //Important Value 
+    char GPIO_value;
 
+  //Sensor Initialization
+  std::cout << "Starting fall detection..." << std::endl;
   mma8451 sensor = mma8451_initialise(1, MMA8451_DEFAULT_ADDR);
   mma8451_vector3 acceleration;
 
   while (true)
   {
+    //Emergency Button Part 
+    valueFile >> GPIO_value;
+    std::cout << "GPIO 17 value: " << GPIO_value << std::endl;
+    valueFile.close();
 
+
+    //Sensor Part
     mma8451_get_acceleration(&sensor, &acceleration);
     std::cout << acceleration << std::endl;
     if(acceleration.x >= treshold || acceleration.y >=  treshold || acceleration.z >= treshold){
       event(acceleration.x);
     }
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    std::this_thread::sleep_for(std::chrono::milliseconds(5000));
   }
 
   return 0;
 }
+
