@@ -14,11 +14,19 @@ const std::string GPIO_PATH = "/sys/class/gpio/gpio" + std::to_string(GPIO_PIN) 
 
 
 
-void event(int value)
+void event_sensor(int value)
 {
   std::cout << "Send request" << std::endl;
 
   system(" curl --location --request GET 'http://localhost:3000/webhook' \
+--header 'Content-Type: application/json' \
+  ");
+}
+void event_button()
+{
+  std::cout << "Send request" << std::endl;
+
+  system(" curl --location --request GET 'http://localhost:3000/emergencybutton' \
 --header 'Content-Type: application/json' \
   ");
 }
@@ -41,24 +49,29 @@ int main()
     directionFile << "in";
     directionFile.close();
   //Emergency Button Initialization
-  std::ifstream valueFile(GPIO_PATH);
-    if (!valueFile) {
-        std::cerr << "Failed to open GPIO value file" << std::endl;
-        //return 1; //should not be comment when build
-    }
+  
   //Important Value 
-    char GPIO_value;
+    bool GPIO_value;
 
   //Sensor Initialization
   std::cout << "Starting fall detection..." << std::endl;
   mma8451 sensor = mma8451_initialise(1, MMA8451_DEFAULT_ADDR);
   mma8451_vector3 acceleration;
 
+
   while (true)
   {
     //Emergency Button Part 
+    std::ifstream valueFile(GPIO_PATH);
+    if (!valueFile) {
+        std::cerr << "Failed to open GPIO value file" << std::endl;
+        //return 1; //should not be comment when build
+    }
     valueFile >> GPIO_value;
-    std::cout << "GPIO 17 value: " << GPIO_value << std::endl;
+    //std::cout << "GPIO 17 value: " << GPIO_value << std::endl;
+    if(GPIO_value){
+      event_button();
+    }
     valueFile.close();
     
     //Sensor Part

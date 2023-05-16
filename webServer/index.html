@@ -8,16 +8,40 @@
 </head>
 <body>
     <h1>List of request made :</h1>
+    <div id="mainDiv" style="white-space: pre-wrap;"></div>
 
     
-    <iframe
-        src="./logfile.txt"
-        frameBorder="0"
-        class=""
-        scrolling="auto"
-        height="100%"
-        width="100%">
-    </iframe>
-    <script></script>
+    <script>
+
+    let dataToDiv = 'noVariable';
+    let counter = 0;
+    const divElement = document.getElementById('mainDiv');
+    
+
+    const fetcher = ()=>{
+    counter++;
+
+    fetch('http://localhost:3000/htmldisplay')
+  .then(response => response.text())
+  .then(data => {
+    console.log(data);
+
+    divElement.textContent = data;
+    //console.log(data);
+  })
+  .catch(error => {
+    
+    console.error('Error:', error);
+  })
+        }
+
+    const interval = setInterval(fetcher(), 1000);
+    if(counter >19){
+        clearInterval(interval);
+    }
+        
+        
+    </script>
+
 </body>
 </html>
