@@ -1,9 +1,170 @@
-newEvent : 1684227359543 value : undefined <br> 
-  newEvent : 1684227360856 value : undefined <br> 
-  newEvent : 1684227361014 value : undefined <br> 
-  newEvent : 1684227361203 value : undefined <br> 
-  newEvent : 1684227361402 value : undefined <br> 
-  newEvent : 1684227390940 value : undefined <br> 
-  newEvent : 1684227400184 value : undefined <br> 
-  newEvent : 1684227402539 value : undefined <br> 
+newEvent (EMERGENCY BUTTON PRESS) : 1684849214757 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849214844 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849219933 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849219989 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849225050 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849225103 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849241880 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849241940 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242012 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242062 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242116 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242156 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242215 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242265 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242335 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242403 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242458 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242515 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242586 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242642 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242707 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242763 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242826 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242867 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849242927 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849242972 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849243036 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849243084 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849243172 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849243232 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849243303 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849243353 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849243426 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849243489 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849243558 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849243627 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849243686 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849243746 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849243814 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849243872 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849243933 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849243999 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849244065 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849244128 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849244188 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849244241 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849244313 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849244386 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849244448 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849244505 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849244583 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849244634 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849244691 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849244738 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849244812 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849244863 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849244928 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849244989 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849245056 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849245120 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849245188 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849245258 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849245325 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849245397 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849245467 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849245515 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849245578 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849245627 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849245700 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849245750 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849245828 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849245886 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849245959 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246028 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849246095 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246136 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849246211 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246255 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849246340 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246380 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849246457 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246498 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246599 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849246674 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246717 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849246767 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246819 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849246894 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849246936 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849247010 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849247065 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849247146 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849247225 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849247288 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849247346 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849247416 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849247467 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849247534 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849247582 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849247660 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849247710 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849247781 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849247830 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849247894 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849250992 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849251070 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849251134 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849251189 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849251250 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849251310 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849251364 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849251425 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849251476 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849251530 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849251575 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849251658 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849251725 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849251792 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849251850 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849251959 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252017 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252092 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849252142 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252195 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849252260 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252324 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849252383 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252435 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849252490 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252561 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849252621 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252676 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849252731 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252785 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849252859 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849252912 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849253025 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849253091 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849253148 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849253254 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849253334 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849253403 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849253461 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849253516 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849253582 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849253638 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849253702 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849253767 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849253861 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849253935 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254002 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254079 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849254144 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254197 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849254262 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254309 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849254377 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254431 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849254500 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849254598 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254644 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849254708 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254760 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849254831 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254873 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849254927 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849254972 value : undefined <br> 
+  newEvent (EMERGENCY BUTTON PRESS) : 1684849255035 value : undefined <br> 
+  newEvent (ACCELERATION): 1684849255086 value : undefined <br> 
   

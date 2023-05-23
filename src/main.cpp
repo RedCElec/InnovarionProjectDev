@@ -16,19 +16,21 @@ const std::string GPIO_PATH = "/sys/class/gpio/gpio" + std::to_string(GPIO_PIN) 
 
 void event_sensor(int value)
 {
-  std::cout << "Send request" << std::endl;
+  std::cout << "\n Send request for acceleration" << std::endl;
 
-  system(" curl --location --request GET 'http://localhost:3000/webhook' \
+  system(" curl --location --request GET 'http://localhost:3000/alarmAcceleration' \
 --header 'Content-Type: application/json' \
   ");
+  std::cout << std::endl;
 }
 void event_button()
 {
-  std::cout << "Send request" << std::endl;
+  std::cout << "\n Send request for emergency button" << std::endl;
 
-  system(" curl --location --request GET 'http://localhost:3000/emergencybutton' \
+  system(" curl --location --request GET 'http://localhost:3000/alarmButton' \
 --header 'Content-Type: application/json' \
   ");
+  std::cout << std::endl;
 }
 
 void i2c_display()
@@ -56,6 +58,7 @@ int main()
   //Sensor Initialization
   std::cout << "Starting fall detection..." << std::endl;
   mma8451 sensor = mma8451_initialise(1, MMA8451_DEFAULT_ADDR);
+  mma8451_set_range(&sensor, 4);
   mma8451_vector3 acceleration;
 
 
@@ -69,7 +72,7 @@ int main()
     }
     valueFile >> GPIO_value;
     //std::cout << "GPIO 17 value: " << GPIO_value << std::endl;
-    if(GPIO_value){
+    if(GPIO_value == 0){
       event_button();
     }
     valueFile.close();
@@ -78,7 +81,7 @@ int main()
     mma8451_get_acceleration(&sensor, &acceleration);
     std::cout << acceleration << std::endl;
     if(acceleration.x >= treshold || acceleration.y >=  treshold || acceleration.z >= treshold){
-      event(acceleration.x);
+      event_sensor(acceleration.x);
     }
 
     std::this_thread::sleep_for(std::chrono::milliseconds(5000));

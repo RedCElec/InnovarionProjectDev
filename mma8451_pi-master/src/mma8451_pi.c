@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdint.h>
-#include <Linux/i2c.h>
+#include <linux/i2c.h>
 
 void mma8451_write_byte(mma8451* handle, int reg, char data)
 {
