@@ -6,7 +6,9 @@
 #include <luma.oled/graphics.h>
 #include <luma.core/interface.h>
 /////////////////////////////////////////////////////////////////////////
-//pip install luma.oled (use this command to install the oled library)//
+//sudo apt-get update
+//sudo apt-get install -y build-essential cmake libjpeg-dev zlib1g-dev libtiff5-dev libopenjp2-7-dev libssl-dev libcurl4-openssl-dev libx11-dev libxcb1-dev libxau-dev libxdmcp-dev libx11-xcb-dev liblzma-dev libxcb-shm0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-image0-dev libxrandr-dev libxrender-dev libfontconfig1-dev libfreetype6-dev libsystemd-dev libudev-dev libinput-dev libmtdev-dev libts-dev libjpeg62-turbo-dev
+//make sure to download the dependencies above
 ///////////////////////////////////////////////////////////////////////
 using namespace std;
 using namespace luma::core;
