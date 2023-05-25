@@ -72,7 +72,7 @@ int main()
     }
     valueFile >> GPIO_value;
     //std::cout << "GPIO 17 value: " << GPIO_value << std::endl;
-    if(GPIO_value == 0){
+    if(GPIO_value == 1){
       event_button();
     }
     valueFile.close();
@@ -86,7 +86,7 @@ int main()
       event_sensor(acceleration.x);
     }
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(6000));
   }
 
   return 0;
