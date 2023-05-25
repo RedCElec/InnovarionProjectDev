@@ -71,8 +71,8 @@ int main()
         //return 1; //should not be comment when build
     }
     valueFile >> GPIO_value;
-    //std::cout << "GPIO 17 value: " << GPIO_value << std::endl;
-    if(GPIO_value == 0){
+    
+    if(GPIO_value == 1){
       event_button();
     }
     valueFile.close();
