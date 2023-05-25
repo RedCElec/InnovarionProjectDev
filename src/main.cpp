@@ -1,12 +1,12 @@
 #include <iostream>
 #include <mma8451_pi/mma8451_pi.h>
-#include <chrono> //to be check
+#include <chrono> 
 #include <thread>
 #include <fstream>
 #include <string>
 
 
-const int treshold = 0.8;
+const int treshold = 2;
 
 // Path to the GPIO value file
 const int GPIO_PIN = 17;
@@ -77,6 +77,8 @@ int main()
     }
     valueFile.close();
     
+
+
     //Sensor Part
     mma8451_get_acceleration(&sensor, &acceleration);
     std::cout << acceleration << std::endl;
