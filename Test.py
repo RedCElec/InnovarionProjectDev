@@ -1,16 +1,19 @@
-import time
-from PIL import Image, ImageDraw, ImageFont
 import Adafruit_SSD1306
 import board
+import busio
+from PIL import Image, ImageDraw, ImageFont
 
 # OLED display configuration
 DISPLAY_WIDTH = 128
 DISPLAY_HEIGHT = 64
 DISPLAY_ADDRESS = 0x3C
 
-# Initialize the I2C bus
-i2c = board.I2C()
-display = Adafruit_SSD1306.SSD1306_I2C(DISPLAY_WIDTH, DISPLAY_HEIGHT, i2c, addr=DISPLAY_ADDRESS)
+# Initialize I2C bus and OLED display
+i2c = busio.I2C(board.SCL, board.SDA)
+display = Adafruit_SSD1306.SSD1306_128_64(rst=None, i2c=i2c, addr=DISPLAY_ADDRESS)
+display.begin()
+display.clear()
+display.display()
 
 # Create a blank image with a black background
 image = Image.new("1", (DISPLAY_WIDTH, DISPLAY_HEIGHT))
@@ -27,7 +30,7 @@ def display_message(message):
 
     # Display the image
     display.image(image)
-    display.show()
+    display.display()
 
 # Main loop
 if __name__ == '__main__':
@@ -38,5 +41,5 @@ if __name__ == '__main__':
             time.sleep(5)  # Delay between updates
 
     except KeyboardInterrupt:
-        display.fill(0)
-        display.show()
+        display.clear()
+        display.display()
