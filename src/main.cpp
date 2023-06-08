@@ -22,6 +22,8 @@ void event_sensor(int value)
 --header 'Content-Type: application/json' \
   ");
   std::cout << std::endl;
+  
+  std::this_thread::sleep_for(std::chrono::milliseconds(1500));
 }
 void event_button()
 {
@@ -31,6 +33,8 @@ void event_button()
 --header 'Content-Type: application/json' \
   ");
   std::cout << std::endl;
+  
+  std::this_thread::sleep_for(std::chrono::milliseconds(1500));
 }
 
 void i2c_display()
@@ -81,12 +85,12 @@ int main()
 
     //Sensor Part
     mma8451_get_acceleration(&sensor, &acceleration);
-    std::cout << acceleration << std::endl;
+    //std::cout << acceleration << std::endl;
     if(acceleration.x >= treshold || acceleration.y >=  treshold || acceleration.z >= treshold){
       event_sensor(acceleration.x);
     }
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
 
   return 0;
