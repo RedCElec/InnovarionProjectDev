@@ -36,22 +36,52 @@ const StartServer = () => {
 
 
 //Main request Type
-  router.get('/webhook', (req: Request, res: Response, next) => {
+  router.get('/alarmAcceleration', (req: Request, res: Response, next) => {
     const timeStamp: number = Date.now();
 
     //create a new json object
     const newEvent = { timeStamp, req };
 
     //write data in Log file
-    fs.appendFile(filePath, `newEvent : ${newEvent.timeStamp} value : ${newEvent.req.body.value} \n`, (err) => {
+    fs.appendFile(filePath, `newEvent (ACCELERATION): ${newEvent.timeStamp} value : ${newEvent.req.body.value} <br> \n  `, (err) => {
       if (err) {
         console.log("error at file writting");
         res.status(401);
       }
       console.log('The new_content was appended successfully');
-      res.status(200).json("sdfghjk");
+      res.status(200).json("Sensor logs recorded ");
     })
   });
+
+  router.get('/alarmButton', (req: Request, res: Response, next) => {
+    const timeStamp: number = Date.now();
+
+    //create a new json object
+    const newEvent = { timeStamp, req };
+
+    //write data in Log file
+    fs.appendFile(filePath, `newEvent (EMERGENCY BUTTON PRESS) : ${newEvent.timeStamp} value : ${newEvent.req.body.value} <br> \n  `, (err) => {
+      if (err) {
+        console.log("error at file writting");
+        res.status(401);
+      }
+      console.log('The new_content was appended successfully');
+      res.status(200).json("Button logs recorded ");
+    })
+  });
+
+
+  router.get('/htmldisplay', (req: Request, res : Response, next) => {
+
+    let dataOutput = '';
+    fs.readFile('logfile.txt', 'utf8', (err, data) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
+      res.status(200).json(data);
+    })
+  })
 
 
 
